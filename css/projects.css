@@ -1,0 +1,239 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: IBM plex Mono,monospace;
+    /* background-color: #112dba; */
+    color: aliceblue;
+}
+header{
+    width: 100%;
+}
+.img_burger{
+    display: none;
+    cursor: pointer;
+    width: 80px;
+    z-index: 1000;
+}
+.img_close{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #0e0d0d;
+}
+nav{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 5px;
+}
+label{
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 495px;
+    height: 29px;
+    flex-shrink: 0;
+}
+.menu>li{
+    margin-left: -8px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+li{
+    list-style-type: none;
+}
+li>a:hover{
+    color: #66FF75;
+    transition: all .8s ease;
+}
+
+/* body section */
+
+section{
+    margin-top: 150px;
+}
+.part1{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between; 
+    margin-left: 80px;  
+}
+.presentation1{
+    font-weight: bold;
+    font-size: 2.9em;
+    max-width: 25%;
+    color: #3D3B3B;
+}
+.lien{
+    margin-top: 250px;
+}
+.p1{
+    color: #000;
+    display: block;
+    max-width: 60%;
+    margin-top: -5px;
+    margin-left: 50px;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 2.3em;
+}
+.container{
+    width: 100%;
+}
+.gside{
+    display: flex;
+    width: 80%;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.cadre1{
+    width: 100%;
+    margin: 80px;
+}
+h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.p2{
+    margin-top: 50px;
+    color: #504A4A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    width: 50%;
+    line-height: normal;
+}
+.img1{
+    border-radius: 100%;
+    border-radius: 260px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+h4{
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+hr{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 150px;
+}
+.reverse{
+    display: none;
+}
+
+/* Media query */
+
+@media screen and (max-width:1120px){
+    .img_burger{
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: -310px;
+        height: 60px;
+        width: 150px;
+        z-index: 100;
+    }
+    .img_close{
+        position: absolute; 
+        top: 10px;
+        left: 800px;
+        margin-left: 270px;
+        display: block;
+        display: none;
+        width: 60px;
+        z-index: 1000;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    label{
+        font-size: 1.9em;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+    .navbar{
+        width: 100%;
+        padding: 30px auto;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        width: 50%;
+        font-size: 1.8em;
+    }
+    .navbar .menu{
+        position: fixed;
+        top: 🚯 30px;
+        left: 700px;
+        width: 50%;
+        display: block;
+        display: none;
+        height: 200vh;  
+        background-color: #fff;
+        padding: 10px;
+        transition: all .8s ease;
+        z-index: 1000;
+    }
+    .li_scroll{
+        font-size: 1.5em;
+        margin-top: 152px;
+    }
+    .li_scroll>a{
+        font-size: 1.5em;
+        margin-top: 32px;
+        margin-left: 160px;
+        font-family: sans-serif;
+    }
+
+    /* body section */
+
+    .part1{
+        display: block;
+    }
+    .p1{
+        margin-top: 15px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .gside{
+        display: none;
+    }
+    .reverse{
+        display: block;
+        margin: 50px;
+    }
+    .img1{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .reverse>h1{
+        margin-left: 50px;
+    }
+    .p2{
+        font-size: 1.9em;
+    }
+}
