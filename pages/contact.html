@@ -8,52 +8,65 @@
         <script src="../js/index.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <label class="label">NGANKEP FANDIO ORDY BENIDI</label>
-                <ul class="menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/projects.html">Projects</a></li>
-                    <li><a href="../pages/contact.html">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <nav class="navbar">
+            <label>NGANKEP FANDIO ORDY BENIDI</label>
+            <ul class="menu">
+                <li class="li_scroll"><a href="../index.html">Home</a></li>
+                <li class="li_scroll"><a href="../pages/projects.html">Projects</a></li>
+                <li class="li_scroll"><a href="../pages/contact.html">Contacts</a></li>
+            </ul>
+            <img src="../asset/images/menu.svg" class="img_burger" id="burger">
+            <img src="../asset/images/close.svg" class="img_close" id="close">
+        </nav> 
+    </header>
         <section>
             <div class="form-container">
                 <form action="" method="post">
-                   <label>Name</label>
-                   <input type="text" name="phone" required placeholder="Enter your phone number"><br>
-                   <label>Email</label>
-                   <input type="email" name="email" required placeholder="Enter your email"><br>
-                   <label>Message</label>
+                   <label class="lab_form">Name</label>
+                   <input type="text" name="phone" required placeholder="Enter your phone number"class="input"><br>
+                   <label class="lab_form">Email</label>
+                   <input type="email" name="email" required placeholder="Enter your email" class="input"><br>
+                   <label class="lab_form">Message</label>
                    <textarea></textarea><br>
                    <button class="btn">Send</button>
                 </form>
              </div>
-             <footer>
-                <div class="reseaux center">
-                    <div class="icon center">
-                      <!-- <img src="./asset/img/img_site/facebook.png" > -->
-                      <i class="img-sociaux facebook fa fa-facebook fa-2x" title="ordybenidi"></i> 
-                    </div>
-                    <div class="icon center">
-                      <!-- <img src="./asset/img/img_site/instagram3.png"  > -->
-                      <a href="ordybeni@gmail.com"><i class="img-sociaux instagram fa fa-google fa-2x" title="ordybeni@gmail.com"></i></a>
-                    </div>  
-                    <div class="icon center">
-                      <!-- <img src="./asset/img/img_site/twitter3.png" > -->
-                      <i class="img-sociaux twitter fa fa-twitter fa-2x" title="twitter"></i>
-                    </div>
-                    <div class="icon center">
-                      <!-- <img src="./asset/img/img_site/youtube.png"class="img-sociaux youtube" title="youtube">   -->
-                      <a href="https://github.com/ordyfandio/"><i class="img-sociaux fa fa-github fa-2x" title="https://github.com/ordyfandio/"></i></a>
-                    </div>
-                    <div class="icon center">
-                      <!-- <img src="./asset/img/img_site/whatsapp4.png" class="img-sociaux whatsapp" title="whatsapp"> -->
-                      <i class="img-sociaux whatsapp fa fa-whatsapp fa-2x" title="678915697"></i>
-                    </div>
-                  </div>
-             </footer>
-        </section>
+        </section>     
+        <footer>
+          <div class="contact">
+            <h1>NGANKEP FANDIO ORDY BENIDI.</h1>
+            <div class="div_infos">
+              <img src="../asset/images/support.png" class="img_contact">
+              <div class="infos">
+                <p class="number"><b>Tel: +237 678915697</b></p>
+                <p class="email"><b>Email:</b>  <a href="ordybeni@gmail.com">ordybeni@gmail.com</a></p>
+              </div>
+            </div>
+            <address><b>Address:</b> First Trust,Buea,Cameroon</address>
+          </div>
+          <div class="reseaux ">
+            <h3>Follow me.</h3>
+            <div class="center">
+              <div class="icon center">
+                <!-- <img src="./asset/img/img_site/facebook.png" > -->
+                <i class="img-sociaux facebook fa fa-facebook fa-2x" title="ordybenidi"></i> 
+              </div>
+              <div class="icon center">
+                <!-- <img src="./asset/img/img_site/instagram3.png"  > -->
+                <a href="ordybeni@gmail.com"><i class="img-sociaux google fa fa-google fa-2x" title="ordybeni@gmail.com"></i></a>
+              </div>  
+              
+              <div class="icon center">
+                <!-- <img src="./asset/img/img_site/youtube.png"class="img-sociaux youtube" title="youtube">   -->
+                <a href="https://github.com/ordyfandio/"><i class="img-sociaux fa fa-github fa-2x" title="https://github.com/ordyfandio/"></i></a>
+              </div>
+              <div class="icon center">
+                <!-- <img src="./asset/img/img_site/whatsapp4.png" class="img-sociaux whatsapp" title="whatsapp"> -->
+                <i class="img-sociaux whatsapp fa fa-whatsapp fa-2x" title="678915697"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
     </body>
 </html>
